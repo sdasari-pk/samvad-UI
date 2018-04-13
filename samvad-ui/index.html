@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BotUI - Hello World</title>
+    <title>Samvad User Interface</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
@@ -16,12 +16,30 @@
             height: 100% !important;
           }
           .botui-message-content{
-            display: block !important;
+            display: block;
+          }
+          .botui-actions-buttons-button, .botui-actions-text-submit{
+            background: #1779ba;
+          }
+          .botui-message-content.human {
+            background-color: #90ee90;
+          }
+        #site_logo {
+            background-image: url(https://prokarma.com/wp-content/uploads/2018/02/prokarma_logo_black-1.svg);
+            /* background-color: #cccccc; */
+            background-repeat: no-repeat,repeat;
+            max-width: 150px;
+        }
+          .botui-message-content-link{
+          color: #1a0dab;
           }
       </style>
   </head>
   <body>
-    <div class="botui-app-container" id="hello-world">
+            <div id="site_logo">
+				<img src="https://prokarma.com/wp-content/uploads/2018/02/prokarma_logo_black-1.svg">
+			</div>
+    <div class="botui-app-container" id="samvad-ui">
       <bot-ui></bot-ui>
     </div>
     <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
