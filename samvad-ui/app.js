@@ -1,27 +1,27 @@
-var botui = new BotUI('hello-world');
+var botui = new BotUI('samvad-ui');
 var actionBtns1 = [
                       {
-                        text: 'Information about MSTFJ',
+                        text: 'MSTFJ Basics',
                         value: 'MSTFJ_INFO',
                         cssClass: 'padforbtn'
                       },
                       {
-                        text: 'Learn about MSTFJ environment setup',
+                        text: 'MSTFJ environment setup',
                         value: 'MSTFJ_SETUP',
                         cssClass: 'padforbtn'
                       },
                       {
-                        text: 'Learn about Code Generator',
+                        text: 'Code Generator',
                         value: 'CODE_GENERATOR',
                         cssClass: 'padforbtn'
                       },
                       {
-                        text: 'Information about MSTFJ ecosystem',
+                        text: 'MSTFJ ecosystem',
                         value: 'MSTFJ_ECOSYSTEM',
                         cssClass: 'padforbtn'
                       }, 
                       {
-                        text: 'I got information I was looking for. Take me directly to Core Templates',
+                        text: 'Create my first Repo',
                         value: 'CORETEMPLATES',
                         cssClass: 'padforbtn'
                       }   
@@ -58,19 +58,19 @@ var actionBtns2 = [
                         cssClass: 'padforbtn'
                       }, 
                       {
-                        text: 'Take me to directly to core templates',
+                        text: 'Create my first Repo',
                         value: 'CORETEMPLATES',
                         cssClass: 'padforbtn'
                       }
                     ];
 var actionBtns3 = [
                       {
-                        text: 'I want to know more information about MSTFJ environment setup.',
+                        text: 'Continue with MSTFJ environment setup.',
                         value: 'MSTFJ_SETUP',
                         cssClass: 'padforbtn'
                       },
                       {
-                        text: 'I got information I was looking for. Take me directly to Core Templates',
+                        text: 'Create my first Repo',
                         value: 'CORETEMPLATES',
                         cssClass: 'padforbtn'
                       }
@@ -134,7 +134,7 @@ function continueWithBotUIWebsite(res){
                             cssClass: 'padforbtn'
                           },
                           {
-                            text: 'Take me directly to Core Templates',
+                            text: 'Create my first Repo',
                             value: 'CORETEMPLATES',
                             cssClass: 'padforbtn'
                           }
@@ -167,7 +167,7 @@ function gotoTutorials(){
           });
 }
 function gotoCoreTemplates(){
-
+createMicroServiceTemplate();
 }
 function checkTheFlow_actionBtns1(res){
     switch(res.value){
